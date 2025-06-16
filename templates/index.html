@@ -1,0 +1,241 @@
+<html>
+{% extends 'base.html' %}
+{% block pagetitle %}
+AI Engine
+{% endblock pagetitle %}
+
+{% block body %}
+<div>
+    <div class="container">
+        <!-- For demo purpose -->
+        <div class="row mb-5 text-center text-white">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>🍀AI
+                        Engine🍀</b></h1>
+                <p class="lead" style="font-weight: 500;color: black;">Let Our Engine Will Help You To Detect Disease</p>
+            </div>
+        </div>
+        <!-- End -->
+        <div class="row ">
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+
+                    <h5><b>Why is it necessary to detect disease in plant ?</b></h5>
+                    <p>Plant diseases affect the growth of their respective species. In addition, some research gaps are
+                        identified from which to obtain greater transparency for detecting diseases in plants, even
+                        before their symptoms appear clearly.
+                        diagnosis is one of the most important aspects of a plant pathologist's training. Without proper
+                        identification of the disease and the disease-causing agent, disease control measures can be a
+                        waste of time and money and can lead to further plant losses. Proper disease diagnosis is
+                        necessary.
+                    </p>
+                </div>
+            </div>
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;"><img
+                        src="data:image/jpeg;base64,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 "
+                        height="300" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
+
+                    <!-- Default bootstrap file upload-->
+
+                    <form action="/submit" method="POST" enctype="multipart/form-data">
+                        <div class="custom-file overflow-hidden mb-4">
+                            <input type="file" id="actual-btn" hidden name="image" />
+                            <label for="actual-btn">Choose File</label>
+                            <label id="camera-btn">Open Camera</label>
+
+                            </br>
+                            <span id="file-chosen">No file chosen</span>
+                        </div>
+
+                        <!-- Camera feed container (hidden initially) -->
+                        <div id="camera-container" style="display: none;">
+                            <video id="camera-feed" width="320" height="240" autoplay></video>
+                            <button type="button" id="capture-btn">Capture Photo</button>
+                        </div>
+
+                        <!-- Preview Image (will show the captured photo) -->
+                        <img id="preview" src="#" alt="Camera Photo Preview" style="display: none; max-width: 100%;" />
+
+
+                        <!-- End -->
+
+                        <h6 class="text-center mb-4 text-muted">
+                            Simply upload your plant's leaf image and then see the magic of our ENGINE.
+                        </h6>
+
+                        <!-- Custom bootstrap upload file-->
+                        <center>
+                            <a class="mx-2"><button type="submit" class="btn btn-outline-success">Submit</button></a>
+                        </center>
+                    </form>
+                    <!-- End -->
+
+                </div>
+            </div>
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+                    <h5><b>Prevent Plant Disease follow below steps:</b></h5>
+                    <ol>
+                        <li>Follow Good Sanitation Practices.</li>
+                        <li>Fertilize to Keep Your Plants Healthy.</li>
+                        <li>Inspect Plants for Diseases Before You Bring Them Home.</li>
+                        <li>Allow the Soil to Warm Before Planting.</li>
+                        <li>Ensure a Healthy Vegetable Garden By Rotating Crops.</li>
+                        <li>Provide Good Air Circulation</li>
+                        <li>Remove Diseased Stems and Foliage</li>
+                    </ol>
+                    <a target="_blank" href="https://www.thespruce.com/prevent-plant-diseases-in-your-garden-2539511"
+                        class="mx-2"><button type="button" class="btn btn-outline-success">More info</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const actualBtn = document.getElementById('actual-btn');
+    const captureBtn = document.getElementById('capture-btn');
+
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name
+    })
+
+
+    let capturedFile = null; // Variable to hold the captured file
+
+    document.getElementById('camera-btn').addEventListener('click', function () {
+        // Show the camera container
+        document.getElementById('camera-container').style.display = 'block';
+
+        // Start the camera feed
+        startCamera();
+    });
+
+    // Start the camera feed using the getUserMedia API
+    function startCamera() {
+        const cameraFeed = document.getElementById('camera-feed');
+
+        // Request access to the user's camera
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+                // Set the camera feed source to the stream
+                cameraFeed.srcObject = stream;
+            })
+            .catch(function (error) {
+                console.log('Error accessing the camera: ', error);
+            });
+    }
+
+    // Capture photo from the camera feed
+    document.getElementById('capture-btn').addEventListener('click', function () {
+        const cameraFeed = document.getElementById('camera-feed');
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas dimensions to match the video feed dimensions
+        canvas.width = cameraFeed.videoWidth;
+        canvas.height = cameraFeed.videoHeight;
+
+        // Draw the current frame from the video feed onto the canvas
+        ctx.drawImage(cameraFeed, 0, 0, canvas.width, canvas.height);
+
+        // Convert the canvas image to a data URL
+        const dataUrl = canvas.toDataURL('image/jpeg');
+
+        // Create a new file from the data URL
+        const imageBlob = dataURItoBlob(dataUrl);
+        capturedFile = new File([imageBlob], "camera_image.jpg", { type: 'image/jpeg' });
+
+        // Now you have a file object that you can use locally
+        document.getElementById('file-chosen').textContent = capturedFile.name;
+
+        // Show the captured image preview
+        const preview = document.getElementById('preview');
+        preview.src = dataUrl;
+        preview.style.display = 'block'; // Show the preview
+    });
+
+    // Helper function to convert data URL to Blob
+    function dataURItoBlob(dataURI) {
+        const byteString = atob(dataURI.split(',')[1]);
+        const arrayBuffer = new ArrayBuffer(byteString.length);
+        const uintArray = new Uint8Array(arrayBuffer);
+        for (let i = 0; i < byteString.length; i++) {
+            uintArray[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([uintArray], { type: 'image/jpeg' });
+    }
+
+    // Set up the "Choose File" input to trigger when the image is captured
+    document.getElementById('actual-btn').addEventListener('click', function () {
+        // Use the captured image file as the input file for form submission
+        if (capturedFile) {
+            const dataTransfer = new DataTransfer(); // Create a DataTransfer object
+            dataTransfer.items.add(capturedFile); // Add the captured file to the DataTransfer object
+            document.getElementById('actual-btn').files = dataTransfer.files; // Assign the file to the input
+        }
+    });
+
+
+
+
+    // Start the camera feed
+    async function startCamera() {
+        const videoElement = document.getElementById('camera-feed');
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            videoElement.srcObject = stream;
+        } catch (err) {
+            console.error('Error accessing the camera: ', err);
+        }
+    }
+
+    // Capture the image from the video feed
+    document.getElementById('capture-btn').addEventListener('click', function () {
+        const video = document.getElementById('camera-feed');
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+
+        // Set canvas size equal to video size
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+
+        // Draw the video frame onto the canvas
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        // Convert the image to a data URL and create a file input
+        const dataUrl = canvas.toDataURL('image/png');
+        const fileInput = document.getElementById('captured-image');
+        const file = dataUrlToFile(dataUrl, 'captured-image.png');
+
+        // Create a File object from the base64 image data
+        const dataTransfer = new DataTransfer();
+        dataTransfer.items.add(file);
+        fileInput.files = dataTransfer.files;
+
+        // Hide the camera feed and display the chosen file text
+        document.getElementById('camera-container').style.display = 'none';
+        document.getElementById('file-chosen').innerText = 'Image Captured';
+    });
+
+    // Convert base64 image data to a file object
+    function dataUrlToFile(dataUrl, filename) {
+        const arr = dataUrl.split(',');
+        const mime = arr[0].match(/:(.*?);/)[1];
+        const bstr = atob(arr[1]);
+        const n = bstr.length;
+        const u8arr = new Uint8Array(n);
+
+        while (n--) {
+            u8arr[n] = bstr.charCodeAt(n);
+        }
+
+        return new File([u8arr], filename, { type: mime });
+    }
+
+</script>
+
+{% endblock body %}
